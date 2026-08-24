@@ -1,0 +1,63 @@
+Bloco 1 (Derivação)
+
+Gramática:
+
+G1:S→aS∣b
+
+A) Gere a palavra aaab
+
+Derivação:
+
+S⇒aS
+⇒aaS
+⇒aaaS
+⇒aaab
+
+B) Como saber que a derivação terminou?
+
+A derivação termina quando não há mais símbolos não terminais (S) na palavra gerada.
+Em aaab, aparecem apenas os terminais a e b. Como o símbolo SS foi substituído por bb, não existe mais nenhuma regra para aplicar. Portanto, a derivação terminou.
+
+Bloco 2 (GLC)
+
+Gramática:
+
+G2:S→aSb∣ε
+
+A) Gere a palavra aaabbb
+
+Derivação:
+
+S⇒aSbS 
+⇒aaSbb
+⇒aaaSbbb
+⇒aaaεbbb
+⇒aaabbb
+
+B) É possível gerar a palavra aabbb?
+
+Não, a regra S→aSbS  sempre acrescenta um "a" no início e um "b" no final ao mesmo tempo. Portanto, a gramática gera apenas palavras com a mesma quantidade de "a" e "b":
+
+ε, ab, aabb, aaabbb, aaaabbbb,…
+
+A palavra aabbb possui:
+2 letras a
+3 letras b
+Como as quantidades são diferentes, ela não pode ser gerada por essa gramática.
+
+Bloco 3 (Classificação)
+
+Gramática:
+
+S→aA
+A→b
+
+Classificação: Essa gramática é Regular (Tipo 3).
+
+Motivo:
+
+As produções têm a forma permitida para gramáticas regulares:
+S→aA (terminal seguido de não terminal)
+A→b (apenas terminal)
+
+Como toda gramática regular também é livre de contexto, ela pertence às duas classes, mas a classificação mais específica é Tipo 3.
