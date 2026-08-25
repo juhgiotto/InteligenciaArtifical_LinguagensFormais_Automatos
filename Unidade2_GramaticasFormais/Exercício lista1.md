@@ -66,13 +66,21 @@ Justifique cada resposta.
 Exercício 4
 
 Considere:
+
 L=0, 01, 011, 0111
+
 Determine se cada palavra pertence à linguagem:
+
 0 ∈ L
+
 01 ∈ L
+
 0111 ∈ L
+
 10 ∈ L
+
 111 ∈ L
+
 011 ∈ L
 
 |Sequência|Válida?|Justificativa|
@@ -93,9 +101,13 @@ L=bn∣n≥1
 Para n=1,2,3,4,5
 
 b1 = b
+
 b2 = bb
+
 b3 = bbb
+
 b4 = bbbb
+
 b5 = bbbbb
 
 Resposta: b, bb, bbb, bbbb, bbbbb.
