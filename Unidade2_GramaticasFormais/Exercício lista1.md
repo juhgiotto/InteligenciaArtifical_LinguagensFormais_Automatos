@@ -41,11 +41,17 @@ Considere:
 Determine se as afirmações são verdadeiras ou falsas:
 
 0 ∈ Σ
+
 1 ∈ Σ
+
 01 ∈ Σ 
+
 01 ∈ Σ∗
+
 2 ∈ Σ
+
 101 ∈ Σ∗
+
 Justifique cada resposta.
 
 |Sequência|Válida?|Justificativa|
