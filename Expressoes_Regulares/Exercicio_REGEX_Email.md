@@ -1,9 +1,13 @@
 Atividade - Construa um programa que:
 
 -Solicita 5 endereços de e-mail.
+
 -Valida cada endereço com Regex.
+
 -Armazena válidos e inválidos separadamente.
+
 -Exibe os dois grupos ao final.
+
 -Explica o motivo de cada rejeição.
 
 ```python
@@ -84,6 +88,9 @@ A expressão regular utilizada é:
 Ela verifica se:
 
 -Existe uma parte de usuário antes do @;
+
 -Existe um domínio após o @;
+
 -O domínio possui uma extensão com pelo menos 2 letras;
+
 -São aceitos caracteres comuns em e-mails (., _, %, +, -).
