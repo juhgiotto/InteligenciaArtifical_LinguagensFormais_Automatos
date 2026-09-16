@@ -1,10 +1,12 @@
-A seguir está um exemplo em Python que atende a todos os requisitos:
+Atividade - Construa um programa que:
 
 Solicita 5 endereços de e-mail.
 Valida cada endereço com Regex.
 Armazena válidos e inválidos separadamente.
 Exibe os dois grupos ao final.
 Explica o motivo de cada rejeição.
+
+```python
 import re
 
 # Regex para validação de e-mail
@@ -38,8 +40,8 @@ for email in validos:
 print("\n=== E-MAILS INVÁLIDOS ===")
 for email, motivo in invalidos:
     print(f"{email} -> {motivo}")
-
-Teste com os casos fornecidos
+```
+Teste com as entradas fornecidas:
 
 Entradas:
 
@@ -63,13 +65,9 @@ ana@dominio -> o domínio não possui extensão válida (ex.: .com, .br, .edu).
 
 Explicação das entradas inválidas
 
-pedro.gmail.com
+pedro.gmail.com -> Rejeitado porque não contém o caractere @, obrigatório em um endereço de e-mail.
 
-Rejeitado porque não contém o caractere @, obrigatório em um endereço de e-mail.
-
-ana@dominio
-
-Rejeitado porque o domínio não possui uma extensão válida após um ponto, como .com, .br, .edu.br, etc.
+ana@dominio -> Rejeitado porque o domínio não possui uma extensão válida após um ponto, como .com, .br, .edu.br, etc.
 
 A expressão regular utilizada é:
 
