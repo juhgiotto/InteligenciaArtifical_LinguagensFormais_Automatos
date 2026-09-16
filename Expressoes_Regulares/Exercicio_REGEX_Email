@@ -41,6 +41,7 @@ print("\n=== E-MAILS INVÁLIDOS ===")
 for email, motivo in invalidos:
     print(f"{email} -> {motivo}")
 ```
+
 Teste com as entradas fornecidas:
 
 Entradas:
