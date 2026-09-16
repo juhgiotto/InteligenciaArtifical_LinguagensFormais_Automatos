@@ -1,10 +1,10 @@
 Atividade - Construa um programa que:
 
-Solicita 5 endereços de e-mail.
-Valida cada endereço com Regex.
-Armazena válidos e inválidos separadamente.
-Exibe os dois grupos ao final.
-Explica o motivo de cada rejeição.
+-Solicita 5 endereços de e-mail.
+-Valida cada endereço com Regex.
+-Armazena válidos e inválidos separadamente.
+-Exibe os dois grupos ao final.
+-Explica o motivo de cada rejeição.
 
 ```python
 import re
@@ -46,25 +46,30 @@ Teste com as entradas fornecidas:
 
 Entradas:
 
+```text
 maria@gmail.com
 joao.silva@udf.edu.br
 estudante_01@faculdade.com
 pedro.gmail.com
 ana@dominio
-
+```
 
 Saída esperada:
 
-=== E-MAILS VÁLIDOS ===
+Válidos:
+```text
 maria@gmail.com
 joao.silva@udf.edu.br
 estudante_01@faculdade.com
+```
 
-=== E-MAILS INVÁLIDOS ===
+Inválidos:
+```text
 pedro.gmail.com -> não possui o caractere '@'.
 ana@dominio -> o domínio não possui extensão válida (ex.: .com, .br, .edu).
+```
 
-Explicação das entradas inválidas
+Explicação das entradas inválidas:
 
 pedro.gmail.com -> Rejeitado porque não contém o caractere @, obrigatório em um endereço de e-mail.
 
@@ -72,12 +77,13 @@ ana@dominio -> Rejeitado porque o domínio não possui uma extensão válida ap�
 
 A expressão regular utilizada é:
 
+```text
 ^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$
-
+```
 
 Ela verifica se:
 
-Existe uma parte de usuário antes do @;
-Existe um domínio após o @;
-O domínio possui uma extensão com pelo menos 2 letras;
-São aceitos caracteres comuns em e-mails (., _, %, +, -).
+-Existe uma parte de usuário antes do @;
+-Existe um domínio após o @;
+-O domínio possui uma extensão com pelo menos 2 letras;
+-São aceitos caracteres comuns em e-mails (., _, %, +, -).
